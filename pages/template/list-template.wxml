@@ -1,0 +1,18 @@
+<template name="listTemp">
+    <view class='tmpContainer'>
+        <view class="avatar_date">
+            <image src="{{avatar}}"></image>
+            <text>{{date}}</text>
+        </view>
+        <text class="title">{{title}}</text>
+        <image src="{{headImgSrc}}" class="contentImg" ></image>
+        <text class="content">{{content}}</text>
+        <view class='collection_love'>
+            <image src="/images/icon/star.png"></image>
+            <text>{{collection}}</text>
+            <image src="/images/icon/view.png"></image>
+            <text>{{reading}}</text>
+        </view>
+    </view>
+
+</template>

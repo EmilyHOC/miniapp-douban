@@ -1,0 +1,24 @@
+<import src="/pages/template/list-template.wxml"></import>
+
+<view class=" ">
+  <swiper indicator-dots='true' indicator-color='#000' indicator-active-color='#fff'>
+    <swiper-item>
+      <image src='/images/swiper/1.png'></image>
+    </swiper-item>
+     <swiper-item>
+      <image src='/images/swiper/2.png'></image>
+    </swiper-item>
+     <swiper-item>
+      <image src='/images/swiper/3.png'></image>
+    </swiper-item>
+     <swiper-item>
+      <image src='/images/swiper/4.png'></image>
+    </swiper-item>
+  </swiper>
+      <block wx:for='{{listArr}}' wx:key='{{index}}'>
+        <view catchtap="toDetail" data-index="{{index}}">
+            <template is="listTemp" data='{{...item}}'/>
+        </view>
+      </block>
+
+</view>
